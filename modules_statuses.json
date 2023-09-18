@@ -1,0 +1,7 @@
+{
+    "Dashboard": true,
+    "Parties": true,
+    "Items": true,
+    "Sales": true,
+    "Purchases": true
+}
