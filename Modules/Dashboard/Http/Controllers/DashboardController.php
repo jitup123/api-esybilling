@@ -18,7 +18,7 @@ class DashboardController extends Controller
         // return $user;
         $user = $request->user(); //getting the current logged in user
          $user->hasRole('admin'); //will return true, if user has role
-        // dd($user->givePermissionsTo('create-tasks'));// will return permission, if not null
+         dd($user->givePermissionsTo('create-tasks'));// will return permission, if not null
        // dd($user->can('create-tasks')); // will return true, if user has permission
         // if ($request->user()->can('create-tasks')) {
         //     echo "hello";
