@@ -15,7 +15,8 @@
         "laravel/tinker": "^2.8",
         "laravel/ui": "^4.2",
         "league/glide-laravel": "^1.0",
-        "nwidart/laravel-modules": "^10.0"
+        "nwidart/laravel-modules": "^10.0",
+        "pion/laravel-chunk-upload": "^1.5"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",

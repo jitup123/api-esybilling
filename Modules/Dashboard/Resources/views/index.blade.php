@@ -1,4 +1,5 @@
 @extends('dashboard::layouts.master')
+@section('title') {!! config('dashboard.name') !!} @endsection
 
 @section('content')
     <h1>Hello World</h1>

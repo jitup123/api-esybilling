@@ -14,13 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
 
 // Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/roles', [App\Http\Controllers\PermissionController::class,'Permission']);
+Route::post('/file-upload/upload-large-files', [App\Http\Controllers\HomeController::class, 'uploadLargeFiles'])->name('files.upload.large');
 
-Route::get('/image/{path?}/{image?}', [App\Http\Controllers\HomeController::class, 'show'])->name('image');
-Route::get('/storage/{path?}',[App\Http\Controllers\HomeController::class, 'show'])->where('path', '.*');
+// Route::get('/image/{path?}/{image?}', [App\Http\Controllers\HomeController::class, 'show'])->name('image');
+// Route::get('/storage/{path?}',[App\Http\Controllers\HomeController::class, 'show'])->where('path', '.*');
+Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
