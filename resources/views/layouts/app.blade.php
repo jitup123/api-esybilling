@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>@yield('title')</title>
+    <title>@yield('title') --- </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="@yield('title')" name="description" />
     <meta content="Themesbrand" name="author" />
